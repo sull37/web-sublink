@@ -1,0 +1,35 @@
+<section class="card fade">
+  <h2>👑 Link Sub Generator</h2>
+  <p style="margin-top:10px;line-height:1.7;">
+    Selamat datang di <b>Link Sub Generator Ultimate Pro Glow</b> — platform all-in-one 
+    untuk membuat, mengonversi, dan mengelola konfigurasi <b>VLESS CF</b> secara instan.  
+    Nikmati kemudahan dengan antarmuka modern, mode gelap, dan efek neon biru elegan.
+  </p>
+
+  <div style="margin-top:20px;">
+    <h3>✨ Kelebihan VLESS CF</h3>
+    <ul style="margin-left:20px;margin-top:8px;">
+      <li>🔹 Stabil dan cepat lewat jaringan Cloudflare</li>
+      <li>🔹 Support TLS & non-TLS</li>
+      <li>🔹 Aman tanpa autentikasi tambahan</li>
+      <li>🔹 Mudah diintegrasikan ke banyak aplikasi</li>
+    </ul>
+
+    <h3 style="margin-top:15px;">⚠️ Kekurangan</h3>
+    <ul style="margin-left:20px;margin-top:8px;">
+      <li>🔸 Bergantung pada domain & konfigurasi bug</li>
+      <li>🔸 Tidak cocok untuk bandwidth sangat tinggi</li>
+    </ul>
+  </div>
+
+  <div style="margin-top:30px;text-align:center;">
+    <button class="glow-btn" id="gotoGenerator">🚀 Mulai Generate</button>
+  </div>
+</section>
+
+<script>
+document.getElementById("gotoGenerator").addEventListener("click", () => {
+  const event = new CustomEvent("loadPage", { detail: "generator" });
+  document.dispatchEvent(event);
+});
+</script>
