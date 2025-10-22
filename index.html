@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>👑 Link Sub Generator — Ultimate Pro Glow</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0a192f">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Splash Screen -->
+  <div id="splash" class="splash">
+    <div class="splash-inner">
+      <div class="splash-logo">👑</div>
+      <h1 class="splash-title">Link Sub Generator</h1>
+      <p class="splash-sub">⚡ Initializing System — Please wait...</p>
+    </div>
+  </div>
+
+  <!-- Hamburger Menu -->
+  <button id="hamburger" class="hamburger" aria-label="Open menu">☰</button>
+
+  <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar" aria-hidden="true">
+    <div class="sidebar-inner">
+      <div class="clock-wrap">
+        <div id="clock" class="sidebar-clock">00:00:00</div>
+        <div class="clock-label">WITA Time</div>
+      </div>
+
+      <div class="sidebar-brand">
+        <div class="brand-icon">👑</div>
+        <div class="brand-text">Link Sub Generator</div>
+      </div>
+
+      <nav class="menu" aria-label="Main menu">
+        <button class="menu-item" data-view="home">🏠 Beranda</button>
+        <button class="menu-item" data-view="generator">⚙️ Generator</button>
+        <button class="menu-item" data-view="tools">🧰 Tools</button>
+        <button class="menu-item" data-view="support">💖 Support</button>
+        <button class="menu-item" data-view="about">📄 About</button>
+
+        <div class="menu-sep"></div>
+
+        <label class="menu-item menu-toggle">
+          <input type="checkbox" id="themeSwitch"> Mode Gelap
+        </label>
+
+        <div class="theme-selector">
+          <label for="themeColor">Theme</label>
+          <select id="themeColor">
+            <option value="red">Merah</option>
+            <option value="blue" selected>Biru</option>
+            <option value="purple">Ungu</option>
+            <option value="cyan">Cyan</option>
+          </select>
+        </div>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="madeby">✨ Made with ❤️ by SultanML</div>
+        <div class="contact">
+          📬 Contact:
+          <a href="https://t.me/SML073" target="_blank">@SML073</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <div id="overlay" class="overlay hidden"></div>
+  <header class="topbar"><h1>👑 Link Sub Generator</h1></header>
+  <main id="content" class="main"></main>
+
+  <div id="spinner" class="spinner hidden">Loading…</div>
+  <div id="toast-wrap" class="toast-wrap"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
