@@ -1,0 +1,61 @@
+<section class="card fade">
+  <h2>⚙️ Sub Link Generator</h2>
+  <div class="form-wrap" style="margin-top:20px;display:grid;gap:12px;">
+    <label>Domain
+      <select id="domain">
+        <option value="ver2.sultanml073.workers.dev">ver2.sultanml073.workers.dev</option>
+        <option value="sull.biz.id">sull.biz.id</option>
+        <option value="sul.biz.id">sul.biz.id</option>
+      </select>
+    </label>
+
+    <label>Tipe Config
+      <select id="vpn">
+        <option value="vless">VLESS</option>
+        <option value="ss">Shadowshock</option>
+      </select>
+    </label>
+
+    <label>Kode Negara
+      <input type="text" id="cc" placeholder="ID,SG">
+    </label>
+
+    <label>Bug (Host)
+      <select id="bug">
+        <option value="store.linefriends.com">store.linefriends.com</option>
+        <option value="cdn.udemy.com">cdn.udemy.com</option>
+        <option value="ava.game.naver.com">ava.game.naver.com</option>
+        <option value="quiz.int.vidio.com">quiz.int.vidio.com</option>
+      </select>
+    </label>
+
+    <label>Limit
+      <input type="number" id="limit" value="10">
+    </label>
+
+    <label>TLS
+      <select id="tls">
+        <option value="true">True (443)</option>
+        <option value="false">False (80)</option>
+      </select>
+    </label>
+
+    <button id="generateBtn" class="glow-btn">🚀 Generate Link</button>
+  </div>
+</section>
+
+<section id="resultCard" class="card hidden fade">
+  <h3>🔗 Hasil Generate</h3>
+  <p id="resultText" style="word-break:break-all;margin-top:10px;background:#f7f9fc;padding:10px;border-radius:8px;"></p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px;">
+    <button id="copyBtn" class="glow-btn">📋 Salin Link</button>
+    <button id="openBtn" class="glow-btn">🌐 Buka Link</button>
+  </div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px;">
+    <button id="previewBtn" class="glow-btn">📷 Preview QR</button>
+    <button id="downloadBtn" class="glow-btn">⬇️ Download QR</button>
+    <button id="yamlBtn" class="glow-btn">📜 Convert YAML</button>
+  </div>
+  <div id="qrBox" class="hidden" style="margin-top:20px;text-align:center;"></div>
+  <pre id="yamlResult" class="hidden" style="margin-top:15px;background:#0a192f;color:#0ff;padding:10px;border-radius:8px;overflow:auto;"></pre>
+</section>
